@@ -12,6 +12,11 @@ def main(args=None):
     snake.setDefaultBG();
     clock = pygame.time.Clock()
     while 1:
+        for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    keys = pygame.key.get_pressed()
+                    if(keys[pygame.K_ESCAPE]):
+                        sys.exit();
         clock.tick(60)
 
     # Do argument parsing here (eg. with argparse) and anything else

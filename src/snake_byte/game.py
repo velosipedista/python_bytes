@@ -11,7 +11,7 @@ class game:
         pygame.mouse.set_visible(0)
         
     def setDefaultBG(self):
-        background = pygame.Surface(self.screen.get_size()) 
+        background = pygame.Surface(self.screen.get_size())
         background = background.convert()
         background.fill((250, 250, 250))
         if pygame.font:
